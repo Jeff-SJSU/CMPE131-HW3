@@ -12,13 +12,13 @@
 {% endwith %} 
 
 <h1>Welcome {{ name }}!</h1>
-<a href="https://www.google.com/">not google</a>
+<a href="www.google.com">not google</a>
 <ul>
 {% for city in city_names %}
     <li>{{ city }}</li>
 {% endfor %}
 </ul>
-<form action="" method="post" novalidate>
+<form action="" method="POST">
     {{ form.hidden_tag() }}
     <p>
         {{ form.city.label }}<br>
